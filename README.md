@@ -7,7 +7,7 @@
 
 [![Build Status](https://github.com/mledoze/countries/workflows/CI/badge.svg)](https://github.com/mledoze/countries/actions)
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/mledoze/countries/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/mledoze/countries/?branch=master)
-[![Downloads](https://img.shields.io/npm/dm/world-countries.svg?style=flat)](https://www.npmjs.com/package/world-countries)
+[![Downloads](https://img.shields.io/npm/dm/world-countries.svg?style=flat)](https://www.npmjs.com/package/world-countries) 
 
 ## Countries data
 This repository contains a list of world countries, as defined by [ISO Standard 3166-1](https://en.wikipedia.org/wiki/ISO_3166-1),
