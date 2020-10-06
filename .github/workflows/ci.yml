@@ -28,3 +28,17 @@ jobs:
 
       - name: Test conversion
         run: php countries.php convert
+      
+
+      - run: curl -LJO https://github.com/whitesource/fs-agent-distribution/raw/master/standAlone/whitesource-fs-agent.jar
+      - run: java -jar whitesource-fs-agent.jar -c wss-unified-agent.config -d . 
+      
+      - name: Upload to Scantist when there is a push or request
+        env: # Setting the Token
+          SCANTISTTOKEN: ${{secrets.SCANTISTTOKEN }}
+          SCANTIST_IMPORT_URL : "https://api-staging.scantist.io/ci-scan/"
+        run: java -jar scantist-bom-detect.jar
+        
+        
+        
+    
